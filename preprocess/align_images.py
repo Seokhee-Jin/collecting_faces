@@ -7,7 +7,7 @@ from landmarks_detector import LandmarksDetector
 from PIL import Image
 import multiprocessing
 import cv2
-
+from tqdm import tqdm
 
 def unpack_bz2(src_path):
     data = bz2.BZ2File(src_path).read()
@@ -34,9 +34,10 @@ if __name__ == "__main__":
 
     RAW_IMAGES_DIR = args.raw_dir
     ALIGNED_IMAGES_DIR = args.aligned_dir
+    os.makedirs(ALIGNED_IMAGES_DIR, exist_ok=True)
 
     landmarks_detector = LandmarksDetector()
-    for img_name in os.listdir(RAW_IMAGES_DIR):
+    for img_name in tqdm(os.listdir(RAW_IMAGES_DIR)):
         print('Aligning %s ...' % img_name)
         try:
             raw_img_path = os.path.join(RAW_IMAGES_DIR, img_name)
