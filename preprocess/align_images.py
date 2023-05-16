@@ -2,8 +2,8 @@ import os
 import sys
 import bz2
 import argparse
-from face_alignment import image_align
-from landmarks_detector import LandmarksDetector
+from .face_alignment import image_align
+from .landmarks_detector import LandmarksDetector
 from PIL import Image
 import multiprocessing
 import cv2
