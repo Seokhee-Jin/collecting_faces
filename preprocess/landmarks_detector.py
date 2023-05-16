@@ -1,9 +1,13 @@
 import dlib
 import cv2
+import os
 
+
+cur_dir = os.path.split(os.path.realpath(__file__))[0]
+model_path = os.path.join(cur_dir, 'shape_predictor_68_face_landmarks.dat')
 
 class LandmarksDetector:
-    def __init__(self, predictor_model_path):
+    def __init__(self, predictor_model_path=model_path):
         """
         :param predictor_model_path: path to shape_predictor_68_face_landmarks.dat file
         """
@@ -20,3 +24,4 @@ class LandmarksDetector:
                 yield face_landmarks
             except:
                 print("Exception in get_landmarks()!")
+
