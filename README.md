@@ -33,3 +33,7 @@ pip install collecting_faces==1.0.5
 ![original image](./docs/sample_03.png)
 ![original image](./docs/sample_04.png)
 
+
+* Align function is from FFHQ dataset pre-processing step
+
+- https://github.com/NVlabs/ffhq-dataset/blob/master/download_ffhq.py
