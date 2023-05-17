@@ -1,6 +1,7 @@
 # Collecting face images from images
 
 ## Installation
+from collecting_faces.collect_faces import collect_faces
 pip install collecting_faces==1.0.5
 
 
