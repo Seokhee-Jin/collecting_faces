@@ -2,10 +2,7 @@ import dlib
 import cv2
 import os
 
-
-cur_dir = os.path.split(os.path.realpath(__file__))[0]
-model_path = os.path.join(cur_dir, 'shape_predictor_68_face_landmarks.dat')
-
+model_path = os.path.join(os.path.dirname(__file__),  "shape_predictor_68_face_landmarks.dat")
 class LandmarksDetector:
     def __init__(self, predictor_model_path=model_path):
         """
