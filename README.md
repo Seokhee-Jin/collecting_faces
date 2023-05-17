@@ -1,5 +1,10 @@
 # Collecting face images from images
 
+## Installation
+pip install collecting_faces==1.0.5
+
+
+
 ## Requirements
 
 - dlib
@@ -18,7 +23,7 @@
 
 ![original image](./docs/sample.jpg)
 
-**After**
+- After
 
 ![original image](./docs/sample_01.png)
 ![original image](./docs/sample_02.png)
