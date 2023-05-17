@@ -1,9 +1,0 @@
-conda env list
-conda activate collecting_faces
-
-cd C:\Users\32174417\PycharmProjects\collecting_faces
-python main.py .\harufilm_images\sources .\harufilm_images\harufilm_256 --output_size 256
-
-"C:\Users\32174417\PycharmProjects\collecting_faces\sihyunhada_images"
-
-##### Any path that contains korean letters is not acceptable.  ####
